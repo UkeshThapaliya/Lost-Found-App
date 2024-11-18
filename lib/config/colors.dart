@@ -1,48 +1,32 @@
 import 'package:flutter/material.dart';
 
-class HexColor extends Color {
-  static int _getColorFromHex(String hexColor) {
-    return int.parse(hexColor, radix: 16);
-  }
-
-  HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
-}
-
-// Color statusBar =
-//     HexColor(primary.value.toRadixString(16)).withOpacity(0.5);
-
-Color secondary = const Color(0xFFDC4346);
-Color primary = const Color(0xFF317BC6);
-Color tertiary = const Color(0xFFEDAB74);
-Color background = const Color.fromARGB(255, 247, 248, 250);
-Color text = Colors.blueGrey.shade600;
-Color textPrimaryDarkColor = Colors.blueGrey.shade600;
+class AppColors {
+  static const primary = const Color(0xFF317BC6);
+  static const Color tertiary = const Color(0xFFEDAB74);
+  static const Color background = const Color.fromARGB(255, 247, 248, 250);
+  static final Color text = Colors.blueGrey.shade600;
+  static final Color textPrimaryDarkColor = Colors.blueGrey.shade600;
 // Color tertiary = Colors.green.shade400;
 // Color tertiary = Colors.orange.shade500;
 // Color statusBar = Color(0xFF009688).withOpacity(0.5);
-Color statusBar = Colors.teal.shade100;
-Color textPrimaryLightColor = Colors.white;
-Color white = Colors.white;
-Color backgroundColorBorder = Colors.grey.shade200;
-Color textPrimaryColor = Colors.black54;
-Color disabledColor = const Color(0xFF4CAF50).withOpacity(0.5);
-Color shadowColor = const Color(0xFFB2B2B2).withOpacity(.16);
+  static final Color statusBar = Colors.teal.shade100;
+  static final Color textPrimaryLightColor = Colors.white;
+  static const Color white = Colors.white;
+  static final Color backgroundColorBorder = Colors.grey.shade200;
+  static Color textPrimaryColor = Colors.black54;
+  static Color disabledColor = const Color(0xFF4CAF50).withOpacity(0.5);
+  static Color shadowColor = const Color(0xFFB2B2B2).withOpacity(.16);
 
 //textColors
-Color textsecondaryLightColor = Colors.white;
-Color textsecondaryDarkColor = Colors.black;
-Color textSecondaryLightColor = Colors.black87;
-Color textSecondary54 = Colors.black54;
-Color textSecondaryDarkColor = Colors.blue;
-Color hintTextColor = Colors.white30;
-Color bucketDialogueUserColor = Colors.red;
-Color disabledTextColour = Colors.black54;
-Color placeHolderColor = Colors.black26;
-Color dividerColor = Colors.black26;
-
-InputDecorationTheme formInput() {
-  return InputDecorationTheme(
-    border: const OutlineInputBorder(),
-    labelStyle: TextStyle(color: secondary, fontSize: 16.0, fontFamily: 'Lato'),
-  );
+  static final Color textsecondaryLightColor = Colors.white;
+  static final Color textsecondaryDarkColor = Colors.black;
+  static final Color textSecondaryLightColor = Colors.black87;
+  static final Color textSecondary54 = Colors.black54;
+  static Color textSecondaryDarkColor = Colors.blue;
+  static Color hintTextColor = Colors.white30;
+  static Color bucketDialogueUserColor = Colors.red;
+  static Color disabledTextColour = Colors.black54;
+  static Color placeHolderColor = const Color.fromARGB(66, 93, 90, 90);
+  static const Color dividerColor = Color.fromARGB(131, 61, 61, 61);
+  static const Color black = Colors.black;
 }
